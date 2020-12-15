@@ -1,0 +1,15 @@
+//----------------------------------------------
+// Simplebar
+// ---------------------------------------------
+.simplebar-scrollbar::before {
+  // background-color: rgba($icon-02, .6);
+}
+
+.simplebar-scrollbar:hover::before {
+  // background-color: $icon-02;
+}
+
+// simplebar 사용시 기본으로 추가할 클래스
+.simplebar {
+  height: 100%;
+}
