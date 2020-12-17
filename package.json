@@ -6,7 +6,9 @@
   "scripts": {
     "build": "node ./clean-dist-folder.js && webpack --config webpack.prod.js --watch",
     "push": "git subtree push --prefix src/core-style design-core-origin master",
-    "pull": "git subtree pull --prefix src/core-style design-core-upstream master"
+    "pull": "git subtree pull --prefix src/core-style design-core-upstream master",
+    "push-hy": "git subtree push --prefix src/core-style design-core master",
+    "pull-hy": "git subtree pull --prefix src/core-style design-core master"
   },
   "keywords": [],
   "author": "",
