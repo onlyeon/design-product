@@ -1,7 +1,10 @@
+// 기본 theme 선언
 @import './themes/theme.scss';
+// 변형 theme 선언
+@import './themes/pink.scss';
+
 @import './config/config.scss';
 @import './utils/utils.scss';
 @import './layout/layout.scss';
 @import './component/component.scss';
 @import './vendors/vendor.scss';
-
