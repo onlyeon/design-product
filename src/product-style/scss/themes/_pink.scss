@@ -1,8 +1,18 @@
 // themes.scss의 색상 재설정
-$ui-01: pink;
+$primary: #ff4284;
+$secondary: #b042ff;
+$ui-01: #ffd0d0;
+$ui-02: #FFFFFF;
+$ui-03: #cbb2b2;
+$ui-04: #e8dcdc;
+$text-01: #4d2631;
+$text-02: #634949;
+$text-03: #9a7777;
+$text-04: #FFFFFF;
 
 
-// 아래에 수정이 필요한 경우 스트럭쳐 수정
+// 변수처리 되지 않은 내용 수정이 필요한 경우 row한 class 수정할 수 있음
+// (지양하자! 웬만한건 다 변수 처리하자~)
 .icon-comm {
   fill: deeppink;
 }
