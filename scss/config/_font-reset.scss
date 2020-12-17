@@ -1,0 +1,21 @@
+html {
+  font-size: $base-font-size;
+}
+
+body {
+  @include font-family("sans");
+  @include font-size("14"); // NOTE: IMA 기준 body 폰트
+  @include letter-spacing;
+  color: $text-01;
+  background-color: $ui-01;
+  line-height: 1.6;
+}
+
+code {
+  @include font-family("mono");
+}
+
+strong {
+  font-weight: 700;
+}
+  
