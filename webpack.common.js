@@ -4,7 +4,11 @@ const path = require("path"),
   SvgSpriteLoaderPlugin = require("svg-sprite-loader/plugin");
 
 module.exports = {
-  entry: "./src/_js/index.js",
+  entry: {
+    "main": "./src/_js/index.js",
+    "sherman": "./src/_js/sherman.js",
+    "pink": "./src/_js/pink.js"
+  },
 
   module: {
     rules: [
@@ -120,7 +124,7 @@ module.exports = {
   plugins: [
     // index.js에 포함된 css를 별도의 .css 파일 형식으로 추출한다.
     new MiniCssExtractPlugin({
-      filename: "css/style.min.css",
+      filename: "css/[name]/style.min.css",
     }),
 
     // 공통 컴포넌트 영역 모듈화
@@ -141,8 +145,8 @@ module.exports = {
 
   output: {
     path: path.resolve(__dirname, "./dist"),
-    filename: "./js/style.bundle.js",
+    filename: "./js/[name].bundle.js",
     // publicPath: "../../", 기존과 경로가 변경됐으나, 재변경 상관 없음
-    publicPath: "../",
+    publicPath: "../../",
   },
 };

@@ -1,10 +1,10 @@
 // 기본 theme 선언
-@import './themes/theme.scss';
+@import '/src/core-style/scss/themes/theme';
 // 변형 theme 선언
-@import './themes/pink.scss';
+// @import './themes/pink.scss';
 
-@import './config/config.scss';
-@import './utils/utils.scss';
-@import './layout/layout.scss';
-@import './component/component.scss';
-@import './vendors/vendor.scss';
+@import '/src/core-style/scss/config/config.scss';
+@import '/src/core-style/scss/utils/utils.scss';
+@import '/src/core-style/scss/layout/layout.scss';
+@import '/src/core-style/scss/component/component.scss';
+@import '/src/core-style/scss/vendors/vendor.scss';
